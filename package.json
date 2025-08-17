@@ -4,6 +4,7 @@
     "main": "index.js",
     "scripts": {
         "build": "cross-env GOOS=js GOARCH=wasm go build -o dist/main.wasm src/main.go",
+        "copy": "node copyfiles.mjs",
         "start": "tsc && node dist/index.js"
     },
     "repository": {
@@ -28,7 +29,7 @@
         "singleQuote": true
     },
     "dependencies": {
-        "tsgo-wasm": "^2025.8.17",
+        "tsgo-wasm": "2025.8.17",
         "typescript": "^5.9.2"
     }
 }

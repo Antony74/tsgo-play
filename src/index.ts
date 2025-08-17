@@ -7,10 +7,7 @@ declare global {
         run: (instance: WebAssembly.Instance) => Promise<void>;
     };
 
-    // Provided by our Go main() via js.Global().Set(...)
-    // eslint-disable-next-line no-var
     var add: (a: number, b: number) => number;
-    // eslint-disable-next-line no-var
     var hello: (name?: string) => string;
 }
 
